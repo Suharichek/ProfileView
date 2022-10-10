@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ProfileView" customModule="ProfileView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="410"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Original_Finn" translatesAutoresizingMaskIntoConstraints="NO" id="enk-Fd-pjg">
+                    <rect key="frame" x="20" y="20" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="bS5-oo-fzO"/>
+                        <constraint firstAttribute="height" constant="150" id="ezI-cb-KaW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Дата рождения" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gi-oF-8lF">
+                    <rect key="frame" x="190" y="85" width="204" height="21"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1o-bx-cw1">
+                    <rect key="frame" x="190" y="149" width="204" height="21"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYw-We-bv7">
+                    <rect key="frame" x="20" y="190" width="374" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="OLu-8Q-Bg2"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Имя" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwg-SG-ACe">
+                    <rect key="frame" x="190" y="20" width="204" height="21"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="enk-Fd-pjg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="0F3-8W-3w9"/>
+                <constraint firstItem="TYw-We-bv7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="3IM-Q1-qzq"/>
+                <constraint firstItem="cwg-SG-ACe" firstAttribute="leading" secondItem="enk-Fd-pjg" secondAttribute="trailing" constant="20" id="DUQ-ys-6JN"/>
+                <constraint firstItem="1gi-oF-8lF" firstAttribute="top" secondItem="cwg-SG-ACe" secondAttribute="bottom" constant="44" id="FOc-TF-Pum"/>
+                <constraint firstItem="TYw-We-bv7" firstAttribute="top" secondItem="enk-Fd-pjg" secondAttribute="bottom" constant="20" id="Hhp-Ee-ALG"/>
+                <constraint firstItem="X1o-bx-cw1" firstAttribute="top" secondItem="1gi-oF-8lF" secondAttribute="bottom" constant="43" id="J2i-YP-6ve"/>
+                <constraint firstItem="enk-Fd-pjg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="TGE-Xa-pBK"/>
+                <constraint firstAttribute="trailing" secondItem="X1o-bx-cw1" secondAttribute="trailing" constant="20" id="U5g-We-es9"/>
+                <constraint firstAttribute="trailing" secondItem="cwg-SG-ACe" secondAttribute="trailing" constant="20" id="Ya6-1b-0MU"/>
+                <constraint firstAttribute="trailing" secondItem="TYw-We-bv7" secondAttribute="trailing" constant="20" id="ZG8-sR-Q5Z"/>
+                <constraint firstItem="1gi-oF-8lF" firstAttribute="leading" secondItem="enk-Fd-pjg" secondAttribute="trailing" constant="20" id="Zei-nR-pe0"/>
+                <constraint firstAttribute="trailing" secondItem="1gi-oF-8lF" secondAttribute="trailing" constant="20" id="aNn-tN-LZH"/>
+                <constraint firstItem="cwg-SG-ACe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="gil-6J-NZn"/>
+                <constraint firstItem="X1o-bx-cw1" firstAttribute="leading" secondItem="enk-Fd-pjg" secondAttribute="trailing" constant="20" id="uhL-tw-xGq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="DateOfBrith" destination="1gi-oF-8lF" id="VCe-Tp-HtK"/>
+                <outlet property="Name" destination="cwg-SG-ACe" id="823-wE-ybo"/>
+                <outlet property="nameOfCity" destination="X1o-bx-cw1" id="Jxl-Za-ohg"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="-144.29347826086956"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Original_Finn" width="203" height="311"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
